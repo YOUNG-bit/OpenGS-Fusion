@@ -177,6 +177,10 @@ python show_lang_embed.py \
 
 Here, users can freely adjust the viewing angle in the interface. We also provide a text box for real-time querying and threshold adjustment. All tests were conducted on an Ubuntu system with a 2K resolution.
 
+
+![GIFMaker_me](https://github.com/user-attachments/assets/9044f94e-7ab6-4cd9-a8b3-3e0bea11fc45)
+
+
 ### Key Press Description
 
 - **T**: Toggle between color and label display modes.

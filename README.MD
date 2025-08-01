@@ -134,6 +134,8 @@ The pipeline has two steps for each dataset:
 * Feature Extraction: Runs mobilesamv2_clip.py to extract 2D SAM masks and CLIP features [TODO: add sam1.0]
 * 3D Mapping: Runs opengs_fusion.py to build semantic GS maps [TODO: support online sam]
 
+We also put some potential bugs to [issue](), please check it out~.
+
 ## Real-time demo 
 ### Using rerun.io viewer
 
@@ -178,7 +180,7 @@ python show_lang_embed.py \
 Here, users can freely adjust the viewing angle in the interface. We also provide a text box for real-time querying and threshold adjustment. All tests were conducted on an Ubuntu system with a 2K resolution.
 
 
-![GIFMaker_me](https://github.com/user-attachments/assets/9044f94e-7ab6-4cd9-a8b3-3e0bea11fc45)
+![interact](./assets/interact.gif)
 
 
 ### Key Press Description

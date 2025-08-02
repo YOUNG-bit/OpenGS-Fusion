@@ -1,0 +1,3 @@
+## camera parameters
+W H fx fy cx cy depth_scale depth_trunc dataset_type
+640 480 577.870605 577.870605 319.500000 239.500000 1000.0 5.0 scannet

@@ -1,0 +1,14 @@
+numpy==1.26.4
+opencv-contrib-python
+open3d
+scipy
+tqdm
+torchmetrics
+plyfile
+rerun-sdk==0.20.1
+timm
+torchpack
+onnx
+onnxsim
+open_clip_torch
+catkin_pkg

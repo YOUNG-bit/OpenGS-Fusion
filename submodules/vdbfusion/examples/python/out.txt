@@ -1,0 +1,29 @@
+74112
+79599
+88341
+126960
+190380
+194711
+197736
+200529
+202853
+max_influence_num: 14
+average_influence_num: 10
+max_influence_num: 14
+average_influence_num: 10
+max_influence_num: 14
+average_influence_num: 11
+max_influence_num: 14
+average_influence_num: 10
+max_influence_num: 14
+average_influence_num: 11
+max_influence_num: 14
+average_influence_num: 11
+max_influence_num: 14
+average_influence_num: 11
+max_influence_num: 14
+average_influence_num: 11
+max_influence_num: 14
+average_influence_num: 11
+max_influence_num: 14
+average_influence_num: 11

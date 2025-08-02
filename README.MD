@@ -8,7 +8,7 @@
 
 [Project](https://young-bit.github.io/opengs-fusion.github.io/) | [Video](https://www.youtube.com/watch?v=e-bHh_uMMxE&t)
 
-![github (1)](./assets/resutls.gif)
+<img src="./assets/resutls.gif" width="600"/>
 
 </div>
 
@@ -46,6 +46,7 @@ python setup.py install --user
 ```
 
 Install mobilesam2 weights
+
 Please download the MobileSAMv2 weights from the following link [Driver](https://drive.google.com/file/d/1dE-YAG-1mFCBmao2rHDp0n-PP4eH7SjE/view)
 After downloading, place the files in opengs_fusion/submodules/MobileSAM/MobileSAMv2/weight.
 The directory structure should look like:
@@ -142,26 +143,16 @@ opengs_fusion/submodules/MobileSAM/MobileSAMv2/weight
 
 The pipeline has two steps for each dataset:
 
-* Feature Extraction: Runs mobilesamv2_clip.py to extract 2D SAM masks and CLIP features [TODO: add sam1.0]
-* 3D Mapping: Runs opengs_fusion.py to build semantic GS maps [TODO: support online sam]
+* Feature Extraction: Runs mobilesamv2_clip.py to extract 2D SAM masks and CLIP features.    
+    ``` bash
+    python mobilesamv2_clip.py --image_folder /path/to/images --output_dir /path/to/output --save_results 
+    ```
+* 3D Mapping: Runs opengs_fusion.py to build semantic GS maps.
+    ``` bash
+    python opengs_fusion.py --dataset_path /path/to/dataset --config /path/to/config.txt --output_path /path/to/output --rerun_viewer --save_results
+    ```
 
 We also put some potential bugs to [issue](), please check it out~.
-
-## Real-time demo 
-### Using rerun.io viewer
-
-Rerun viewer shows the means of trackable Gaussians, and rendered image from reconstructed 3dgs map.
-
-The demo show here is supported by [GS_ICP_SLAM](https://github.com/Lab-of-AI-and-Robotics/GS_ICP_SLAM). 
-
-![GIFMaker_me](https://github.com/Lab-of-AI-and-Robotics/GS_ICP_SLAM/assets/34827206/b4715071-2e4a-4d17-b7a2-612bbd32dbd0)
-
-You just need to add --rerun_viewer to the command when running opengs_fusion.py. For example:
-
-```bash
-python opengs_fusion.py --dataset_path /path/to/dataset --config /path/to/config.txt --output_path /path/to/output --rerun_viewer
-```
-
 
 
 ## Query after performing mapping
@@ -205,6 +196,24 @@ Here, users can freely adjust the viewing angle in the interface. We also provid
 - **=**: Save current mask point cloud.
 - **L**: Toggle voxel visualization.
 
+## Real-time demo 
+### Using rerun.io viewer
+
+Rerun viewer shows the means of trackable Gaussians, and rendered image from reconstructed 3dgs map. 
+
+The demo show here is supported by [GS_ICP_SLAM](https://github.com/Lab-of-AI-and-Robotics/GS_ICP_SLAM). 
+
+![GIFMaker_me](https://github.com/Lab-of-AI-and-Robotics/GS_ICP_SLAM/assets/34827206/b4715071-2e4a-4d17-b7a2-612bbd32dbd0)
+
+You just need to add --rerun_viewer to the command when running opengs_fusion.py. For example:
+
+```bash
+python opengs_fusion.py --dataset_path /path/to/dataset --config /path/to/config.txt --output_path /path/to/output --rerun_viewer
+```
+
+
+
+
 
 ## 🙏 Acknowledgments
 
@@ -216,3 +225,11 @@ This work builds upon the following outstanding open-source projects:
 We're deeply grateful to the researchers behind these projects for sharing their work with the community.
 
 ## Cite
+
+If you find this work useful for your research, please cite our paper:
+
+```bibtex
+@inproceedings{yang2025opengs-fusion,
+
+}
+```

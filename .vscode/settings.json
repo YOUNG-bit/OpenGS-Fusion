@@ -1,0 +1,11 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "hide-files.files": [],
+    "cmake.sourceDirectory": "/home/yangdianyi/my_project/opengsnav/opengs_fusion/submodules/diff-gaussian-rasterization"
+}

@@ -45,6 +45,17 @@ cd ..
 python setup.py install --user
 ```
 
+Install mobilesam2 weights
+Please download the MobileSAMv2 weights from the following link [Driver](https://drive.google.com/file/d/1dE-YAG-1mFCBmao2rHDp0n-PP4eH7SjE/view)
+After downloading, place the files in opengs_fusion/submodules/MobileSAM/MobileSAMv2/weight.
+The directory structure should look like:
+```
+opengs_fusion/submodules/MobileSAM/MobileSAMv2/weight
+├── l2.pt
+├── mobile_sam.pt
+├── ObjectAwareModel.pt
+```
+
 
 ## Datasets
 
@@ -89,7 +100,7 @@ python setup.py install --user
     ```bash
     data
         - scene0046_00
-            - rbg (contain rgb images)
+            - rgb (contain rgb images)
                 - 0.png
                 ...
             - depth (contain depth images)
